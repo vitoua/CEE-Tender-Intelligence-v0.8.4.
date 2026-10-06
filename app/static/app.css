@@ -1,0 +1,12 @@
+
+:root{--red:#e30613;--red-dark:#b9000b;--black:#111;--graphite:#252525;--soft:#f2f2f2;--line:#dedede;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--soft);font-family:Arial,Helvetica,sans-serif;color:var(--black)}
+header{min-height:76px;background:var(--black);display:flex;align-items:center;justify-content:space-between;padding:0 4%;border-bottom:5px solid var(--red)}
+.brand{text-decoration:none;color:var(--white);display:flex;align-items:baseline;gap:12px}.brand span{font-size:28px;font-weight:900;letter-spacing:1.5px}.brand small{font-size:11px;letter-spacing:2px;color:#bbb}
+nav{display:flex;align-items:center;gap:6px}nav a{color:#fff;text-decoration:none;padding:11px 13px;font-size:14px;font-weight:700}nav a:hover{background:var(--red)}
+main{max-width:1440px;margin:auto;padding:28px 3%}.panel,article{background:#fff;border:1px solid var(--line);border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.panel{padding:18px;margin-bottom:16px}.panel>b{display:block;font-size:18px;margin-bottom:12px;border-left:5px solid var(--red);padding-left:10px}
+.countries,section{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.countries{margin:14px 0 18px}.countries label{background:#f8f8f8;border:1px solid #e5e5e5;padding:10px;border-radius:3px}
+input,select,button{font:inherit;padding:11px 13px;border:1px solid #ccc;border-radius:3px}button{background:var(--red);border-color:var(--red);color:#fff;font-weight:800;cursor:pointer;text-transform:uppercase;letter-spacing:.4px}button:hover{background:var(--red-dark)}
+section article{margin:0;padding:18px;border-top:4px solid var(--graphite);transition:.15s}section article:hover{border-top-color:var(--red);transform:translateY(-2px)}article h3{margin:9px 0 12px;font-size:18px;line-height:1.3}article h3 a{color:#111;text-decoration:none}article h3 a:hover{color:var(--red)}small{color:#666}footer{background:#111;color:#aaa;text-align:center;padding:22px;margin-top:30px;font-size:12px;letter-spacing:.6px}
+@media(max-width:900px){header{align-items:flex-start;gap:12px;padding:16px 4%;flex-direction:column}.brand{flex-direction:column;gap:2px}nav{flex-wrap:wrap}.countries,section{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.countries,section{grid-template-columns:1fr}}
